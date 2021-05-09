@@ -48,6 +48,13 @@
 
   @media screen and (max-width: 1200px) {
     width: 358px;
+    margin-right: 0;
+  }
+}
+
+.submit {
+  @media screen and (max-width: 1200px) {
+    margin-top: 20px;
   }
 }
 
