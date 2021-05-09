@@ -500,6 +500,10 @@ h6 {
   justify-content: center;
   justify-items: center;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .close-black {
@@ -811,6 +815,7 @@ h6 {
 .hero {
   margin-right: auto;
   margin-left: auto;
+  max-width: 1600px;
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/mobile/header.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -889,6 +894,7 @@ h6 {
 @media screen and (min-width: 1200px) {
   .footer-flex {
     align-content: space-around;
+    flex-flow: inherit;
   }
 }
 
@@ -902,6 +908,7 @@ h6 {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-style: normal;
 }
 
 .where-is {
@@ -913,6 +920,8 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-transform: none;
+  font-style: normal;
 }
 
 .email-container__item {
@@ -929,14 +938,27 @@ h6 {
 .email-container__form {
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-flow: column wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .email-container__form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-flow: column wrap;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .email-container__form {
     flex-flow: column wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .email-container__form {
+    margin-top: 20px;
   }
 }
 
@@ -947,8 +969,7 @@ h6 {
 }
 
 .email-container__form input {
-  min-width: 450px;
-  margin-bottom: 20px;
+  min-width: 358px;
   padding-left: 15px;
   margin-right: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -958,9 +979,15 @@ h6 {
   background: rgba(0, 0, 0, 0);
 }
 
+@media screen and (max-width: 1200px) {
+  .email-container__form input {
+    width: 358px;
+  }
+}
+
 .email-container {
   margin-left: 15px;
-  margin: 15px;
+  margin-right: 15px;
   text-align: center;
 }
 
@@ -1040,10 +1067,10 @@ h6 {
   text-align: center;
   max-width: 270px;
   margin-bottom: 30px;
-  width: calc((100% - 30px * 1) / 1);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 30px * 1) / 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1061,6 +1088,7 @@ h6 {
   .team-container__item {
     width: calc((100% - 30px * 4) / 4);
     margin-left: 20px;
+    min-width: 270px;
   }
   .team-container__item:first-child {
     margin-left: 0;
