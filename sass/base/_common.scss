@@ -1,0 +1,51 @@
+body {
+  background-color: #ffffff;
+
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.portfolio-title,
+.subtext {
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  color: var(--primary-text-color);
+  transition: var(--animation);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.subtext {
+  font-family: Roboto;
+  color: var(--sub-text-color);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

@@ -1,0 +1,115 @@
+.portfolio-nav .text-container {
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.portfolio-nav .text-container .subtext {
+  padding-top: 4px;
+}
+
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  justify-content: space-around;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.flex-element {
+  width: 370px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  transition: var(--animation);
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.flex-element {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
+    justify-content: center;
+    justify-items: center;
+
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+
+    &:last-child {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 3);
+    justify-content: center;
+    justify-items: center;
+
+    &:last-child {
+      margin-top: 0;
+    }
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
+}
+
+.portfolio-thumb {
+  position: relative;
+  text-align: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.portfolio-thumb:hover::before {
+  opacity: 1;
+}
+
+.portfolio-thumb::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: 250ms;
+  transform: translateY(100%);
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.flex-element:hover .portfolio-thumb::before {
+  transform: translateY(0);
+}
+
+.portfolio-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}

@@ -1,0 +1,110 @@
+.section-button {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  transition: var(--animation);
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.section-button__inactive-button {
+  margin-bottom: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 0px;
+
+  box-shadow: rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: var(--animation);
+}
+
+.section-button__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.active-button-hero {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal__active-button-hero {
+  margin-top: 30px;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.active-button-hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 200px;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: solid transparent;
+}
+
+.active-button,
+.active-button-hero {
+  font-family: Roboto;
+  background-color: var(--accent-text-color);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.inactive-button {
+  font-family: Roboto;
+  background-color: var(--second-bg-color);
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-text-color);
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.email-container .active-button-hero {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.close-black {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: var(--animation);
+
+  &:hover {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+  }
+}

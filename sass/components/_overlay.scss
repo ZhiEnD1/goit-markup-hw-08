@@ -1,0 +1,33 @@
+.overlay {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+  transition: var(--animation);
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.overlay__subtext {
+  display: flex;
+  padding: 63px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.flex-element:hover .overlay {
+  opacity: 1;
+  transform: translateY(0)
+}

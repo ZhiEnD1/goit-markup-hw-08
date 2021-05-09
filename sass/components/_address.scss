@@ -1,0 +1,7 @@
+.address {
+  font-style: normal;
+}
+
+.address-container__item:not(:last-child) {
+  padding-bottom: 9px;
+}
