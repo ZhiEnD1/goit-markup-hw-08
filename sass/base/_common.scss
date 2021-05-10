@@ -4,6 +4,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   margin: 0px;
@@ -43,9 +49,4 @@ h6 {
 
 .hidden {
   display: none;
-}
-
-.main-section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }

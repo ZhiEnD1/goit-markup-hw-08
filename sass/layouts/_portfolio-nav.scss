@@ -1,3 +1,13 @@
+.main-section-portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio-nav .text-container {
   padding-left: 24px;
   padding-bottom: 20px;
@@ -19,10 +29,15 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .flex-element {
-  width: 370px;
+  max-width: 450px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -35,6 +50,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    max-width: 354px;
     &:nth-child(3n) {
       margin-right: 0;
     }
@@ -47,6 +63,7 @@
 
 .flex-element {
   @media screen and (min-width: 768px) {
+    max-width: 354px;
     width: calc((100% - 30px * 2) / 2);
     justify-content: center;
     justify-items: center;
@@ -61,9 +78,15 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px * 3) / 3);
+    min-width: 370px;
     justify-content: center;
     justify-items: center;
+    margin-right: 30px;
+    margin-left: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
     &:last-child {
       margin-top: 0;
@@ -76,7 +99,6 @@
 
 .portfolio-thumb {
   position: relative;
-  text-align: center;
   justify-items: center;
   overflow: hidden;
 }

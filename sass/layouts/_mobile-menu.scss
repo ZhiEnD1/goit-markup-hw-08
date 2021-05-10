@@ -9,6 +9,16 @@
     fill: var(--accent-text-color);
   }
 
+  &.is-open {
+    position: fixed;
+    top: 10px;
+    right: calc((100vw - 450px) / 2);
+
+    @media screen and (min-width: 480px) {
+      right: 15px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -34,6 +44,7 @@
 }
 
 .mobile-menu {
+  overflow-y: hidden;
   position: fixed;
   top: 0;
   right: -100%;
@@ -75,8 +86,10 @@
   }
 }
 
-.mobile-menu-contacts__item {
-  margin-top: 302px;
+.poss {
+  margin-top: 50vh;
+  position: sticky;
+  bottom: 48px;
 }
 
 .mobile-menu-email__item {
