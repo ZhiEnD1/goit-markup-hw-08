@@ -3,6 +3,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--primary-bg-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .address-container {
